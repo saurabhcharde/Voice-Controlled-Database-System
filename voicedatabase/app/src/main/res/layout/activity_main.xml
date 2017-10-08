@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient"
+                android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtSpeechInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="normal" />
+
+
+    <ImageButton
+        android:id="@+id/btnSpeak1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ico_mic"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtSpeechOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btnSpeak3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="Delete"
+        android:layout_alignBottom="@+id/txtSpeechOutput"
+        android:layout_alignRight="@+id/txtSpeechOutput"
+        android:layout_alignEnd="@+id/txtSpeechOutput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/btnSpeak4"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/txtSpeechInput"
+        android:text="Select"
+        android:layout_alignTop="@+id/btnSpeak3"
+        android:layout_toRightOf="@+id/txtSpeechInput"
+        />
+</RelativeLayout>

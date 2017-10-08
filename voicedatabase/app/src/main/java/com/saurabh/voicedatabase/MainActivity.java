@@ -115,7 +115,7 @@ public class MainActivity extends Activity {
                     String param3=result.get(0);
 
                     String uri = String.format("192.168.137.1/speech/insert.php?param1=%1$s",
-                            param3);
+                            param3);//replace with your own ip--(run ipconfig in command prompt)
 
                     Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse("http://"+uri));
 
@@ -145,6 +145,7 @@ public class MainActivity extends Activity {
         }
     }
 
+//Volley Support
   /*  public void sendRequest(final String result) {
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
